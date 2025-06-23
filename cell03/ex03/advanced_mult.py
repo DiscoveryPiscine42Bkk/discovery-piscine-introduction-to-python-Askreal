@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import sys
 
-if len(sys.argv) == 0:
+if len(sys.argv) == 1:
     i = 0
     j = 0
 
