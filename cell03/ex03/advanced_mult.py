@@ -13,4 +13,4 @@ if len(sys.argv) == 0:
         print("\n")
         j = 0
         i +=1
-else : print("None")
+else : print("none")
