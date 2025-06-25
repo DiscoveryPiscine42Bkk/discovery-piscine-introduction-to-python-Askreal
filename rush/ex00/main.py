@@ -1,13 +1,18 @@
-from checkmate import *
-
+from checkmate import checkmate
 
 def main():
     board = """\
-    ....
-    .K..
-    .R.P
-    ....\
-    """
-    checkmate(board)
+........
+.B....Q.
+...R....
+........
+P.......
+...K....
+........
+........\
+"""
+    board1 = 123123
+    checkmate(board1)
+
 if __name__ == "__main__":
     main()
