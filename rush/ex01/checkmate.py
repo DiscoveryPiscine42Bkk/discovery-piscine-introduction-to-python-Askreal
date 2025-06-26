@@ -2,6 +2,14 @@ from visual_chess import *
 
 def checkmate(board_string):
     try:
+        board_string = board_string.upper()
+        # Check other charactor
+        charactor = ['.','K','Q','R','B','P','\n']
+        for c in board_string:
+            if c not in charactor:
+                print(f'This game does not have {c} charactor, Please try again')
+                return
+        
         # Split string into list of rows
         board = board_string.strip().splitlines() #like split('\n')
         n = len(board)
