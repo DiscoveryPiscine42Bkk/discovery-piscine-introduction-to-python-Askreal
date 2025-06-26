@@ -16,6 +16,7 @@ def main():
         return
 
     for file in sys.argv[1:]:
+        print(f'Open file {file}')
         board = read_board_from_file(file)
         result = checkmate(board)
 
