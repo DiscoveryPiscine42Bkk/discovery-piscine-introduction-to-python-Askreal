@@ -7,3 +7,7 @@ if len(sys.argv or 'z' not in sys.argv[1]) != 2:
 else :
     text = sys.argv[1]
     print(f'z'*len(re.findall('z' , text)))    
+
+    print(re.findall('z' , text))
+    print(len(re.findall('z' , text)))
+print(sys.argv)

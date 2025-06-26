@@ -5,6 +5,7 @@ def read_board_from_file(filename):
     try:
         with open(filename, 'r') as f:
             content = f.read().strip()
+            
             return content
     except Exception:
         return None
