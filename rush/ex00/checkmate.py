@@ -1,6 +1,3 @@
-from calendar import c
-
-
 def checkmate(board_string):
     try:
         
