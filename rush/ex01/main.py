@@ -5,9 +5,9 @@ def read_board_from_file(filename):
     try:
         with open(filename, 'r') as f:
             content = f.read().strip()
-            
             return content
     except Exception:
+        print(f'Error, Can not read {filename} please try again with new file')
         return None
 
 def main():
