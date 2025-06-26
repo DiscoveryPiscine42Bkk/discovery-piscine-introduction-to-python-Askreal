@@ -42,16 +42,17 @@ def checkmate(board_string):
                         x += dx
                         continue
                     elif cell in targets:
+                        print(f'Success : the {cell} checks the King at {y+1} , {x+1}')
                         return True
                     else:
                         break
             return False
 
         if check_dirs(rook_dirs, {'R', 'Q'}):
-            print("Success")
+            # print("Success")
             return
         if check_dirs(bishop_dirs, {'B', 'Q'}):
-            print("Success")
+            # print("Success")
             return
 
         # Pawn attack (coming from top-left/top-right)
