@@ -1,8 +1,12 @@
+from visual_chess import *
+
 def checkmate(board_string):
     try:
         # Split string into list of rows
         board = board_string.strip().splitlines() #like split('\n')
         n = len(board)
+        
+        visual_display(board)
 
         if not all(len(row) == n for row in board):
             print("Error: Board is not square")
