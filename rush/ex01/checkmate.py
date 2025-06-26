@@ -7,7 +7,7 @@ def checkmate(board_string):
         charactor = ['.','K','Q','R','B','P','\n']
         for c in board_string:
             if c not in charactor:
-                print(f'This game does not have {c} charactor, Please try again')
+                print(f'This game does not have {c} character, Please try again')
                 return
         
         # Split string into list of rows
